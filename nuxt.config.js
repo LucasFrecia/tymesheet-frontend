@@ -38,7 +38,7 @@ export default {
         }
     },
 
-    proxy: ['http://localhost:3030'],
+    proxy: ['http://localhost:3030/api'],
 
     axios: {
         // baseURL: 'http://localhost:3000/'
