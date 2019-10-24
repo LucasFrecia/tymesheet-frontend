@@ -1,0 +1,51 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "pbastowski@gmail.com",
+      "password": "test123"
+    }
+  ],
+  "todos": [
+    {
+      "title": "new task this new stuff here",
+      "done": true,
+      "id": 56
+    },
+    {
+      "title": "1 time",
+      "done": false,
+      "id": 57
+    },
+    {
+      "title": "sdfa",
+      "done": false,
+      "id": 58
+    },
+    {
+      "title": "dfg",
+      "done": false,
+      "id": 59
+    },
+    {
+      "title": "sd",
+      "done": true,
+      "id": 60
+    },
+    {
+      "title": "sdg",
+      "done": true,
+      "id": 61
+    },
+    {
+      "title": "df",
+      "done": true,
+      "id": 62
+    },
+    {
+      "title": "new stuff",
+      "done": false,
+      "id": 63
+    }
+  ]
+}
