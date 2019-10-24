@@ -1,7 +1,7 @@
 export default {
     mode: 'spa',
 
-    plugins: ['plugins/main.js'],
+    plugins: ['plugins/main.js', './plugins/mini-toastr.js'],
 
     modules: ['@nuxtjs/axios', '@nuxtjs/auth', '@nuxtjs/proxy'],
 

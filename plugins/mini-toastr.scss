@@ -1,0 +1,32 @@
+// mini-toastr overrides
+.mini-toastr {
+    border-radius: 0px;
+
+    .mini-toastr-notification__title {
+        font: bold 14px Roboto, Helvetica, Arial, sans-serif !important;
+        margin-top: -6px;
+        margin-bottom: 6px;
+    }
+
+    .mini-toastr-notification__message {
+        margin-left: -12px;
+    }
+
+    .mini-toastr__notification {
+        border-radius: 0px;
+        opacity: 1;
+        font: normal 14px Roboto !important;
+
+        &.-error {
+            background: #d84837;
+        }
+
+        &.-success {
+            background: #6ac4a1;
+        }
+
+        &.-warn {
+            background: #dea934;
+        }
+    }
+}
