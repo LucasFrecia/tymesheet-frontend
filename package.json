@@ -4,7 +4,7 @@
     "main": "index.js",
     "license": "MIT",
     "scripts": {
-        "start": "nuxt",
+        "start": "concurrently \"nuxt\" \"npm run db\"\n",
         "db": "json-server --watch db/db.json --routes db/routes.json --port 3030"
     },
     "dependencies": {
@@ -17,7 +17,8 @@
         "mini-toastr": "^0.8.1",
         "node-sass": "^4.13.0",
         "nuxt": "^2.10.2",
-        "sass-loader": "^8.0.0"
+        "sass-loader": "^8.0.0",
+        "concurrently": "^5.0.0"
     },
     "devDependencies": {
         "@nuxtjs/vuetify": "^1.9.0"
