@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>{{ title }}</h1>
-        <nuxt-link to="/">home</nuxt-link>
+
         <hr />
     </div>
 </template>

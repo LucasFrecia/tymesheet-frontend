@@ -15,6 +15,7 @@
         <nuxt-link to="public">public</nuxt-link>
         <nuxt-link to="secret">secret</nuxt-link>
         <nuxt-link to="profile">profile</nuxt-link>
+        <nuxt-link to="timesheet/timesheet-new">New Timesheet</nuxt-link>
     </div>
 </template>
 
