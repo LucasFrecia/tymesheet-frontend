@@ -5,6 +5,8 @@ export default {
 
     modules: ['@nuxtjs/axios', '@nuxtjs/auth', '@nuxtjs/proxy'],
 
+    buildModules: ['@nuxtjs/vuetify'],
+
     serverMiddleware: ['~/api/auth.js'],
 
     router: {
