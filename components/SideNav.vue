@@ -8,7 +8,9 @@
                     </v-list-item-action>
                     <v-list-item-content>
                         <v-list-item-title>Dennis Bruijn</v-list-item-title>
-                        <v-list-item-subtitle>dennis.bruijn@sytac.io</v-list-item-subtitle>
+                        <v-list-item-subtitle
+                            >dennis.bruijn@sytac.io</v-list-item-subtitle
+                        >
                     </v-list-item-content>
                 </v-list-item>
                 <v-list-item @click>
@@ -16,7 +18,11 @@
                         <v-icon>mdi-calendar</v-icon>
                     </v-list-item-action>
                     <v-list-item-content>
-                        <v-list-item-title>Timesheets</v-list-item-title>
+                        <v-list-item-title
+                            ><nuxt-link to="/secret"
+                                >Timesheets</nuxt-link
+                            ></v-list-item-title
+                        >
                     </v-list-item-content>
                 </v-list-item>
                 <v-list-item @click>
@@ -40,16 +46,9 @@
     </div>
     <div v-else></div>
 </template>
-                        
-<script>
-export default {
 
-}
+<script>
+export default {}
 </script>
 
-<style>
-</style>
-
-
-
-
+<style></style>
