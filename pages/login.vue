@@ -8,7 +8,7 @@
             <v-text-field v-model="username" label="username" /><br />
             <v-text-field v-model="password" label="password" /><br />
             <pre v-if="login_error" style="color: red;">{{ login_error }}</pre>
-            <v-btn>login</v-btn>
+            <v-btn @click="login">login</v-btn>
         </form>
     </div>
 </template>
