@@ -6,7 +6,16 @@ export default {
     modules: ['@nuxtjs/axios', '@nuxtjs/auth', '@nuxtjs/proxy'],
 
     buildModules: ['@nuxtjs/vuetify'],
-
+    vuetify: {
+        theme: {
+            light: true,
+            themes: {
+                light: {
+                    primary: '#11171E'
+                }
+            }
+        }
+    },
     serverMiddleware: ['~/api/auth.js'],
 
     router: {
