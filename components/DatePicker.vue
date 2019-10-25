@@ -2,7 +2,7 @@
     <v-menu
         ref="menu"
         v-model="menu"
-        :close-on-content-click="true"
+        :close-on-content-click="false"
         :return-value.sync="date"
         transition="scale-transition"
         offset-y
@@ -20,7 +20,7 @@
         </template>
         <v-date-picker
             :value="date"
-            @input="onDateSelected"
+            @click:month="onDateSelected"
             type="month"
             no-title
             scrollable
