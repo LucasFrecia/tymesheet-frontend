@@ -1,13 +1,12 @@
 <template>
     <div class="d-flex align-center" v-if="$auth.loggedIn">
         <div class="v-toolbar__title">
-            <v-icon>mdi-account</v-icon>
-            {{ $auth.user.username }}
+            Hi, {{ $auth.user.username }}!
         </div>
         <v-menu left bottom>
             <template v-slot:activator="{ on }">
                 <v-btn icon v-on="on">
-                    <v-icon>mdi-dots-vertical</v-icon>
+                    <v-icon>mdi-account</v-icon>
                 </v-btn>
             </template>
             <v-list>
