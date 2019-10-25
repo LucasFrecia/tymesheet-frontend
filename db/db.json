@@ -8,6 +8,7 @@
     ],
     "months": [
         {
+            "id": 1,
             "client": "ING",
             "status": "draft",
             "month": "2019-11",
