@@ -40,7 +40,7 @@
             </v-list>
         </v-navigation-drawer>
 
-        <v-app-bar app color="indigo" dark>
+        <v-app-bar app color="primary" dark>
             <v-app-bar-nav-icon
                 @click.stop="drawer = !drawer"
             ></v-app-bar-nav-icon>
@@ -56,7 +56,7 @@
                 <nuxt />
             </v-container>
         </v-content>
-        <v-footer color="indigo" app>
+        <v-footer color="primary" app>
             <span class="white--text">&copy; Sytac timesheets 2019</span>
         </v-footer>
     </v-app>
