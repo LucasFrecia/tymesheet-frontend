@@ -4,15 +4,6 @@
             <v-list dense>
                 <v-list-item @click>
                     <v-list-item-action>
-                        <v-icon>mdi-account</v-icon>
-                    </v-list-item-action>
-                    <v-list-item-content>
-                        <v-list-item-title>Dennis Bruijn</v-list-item-title>
-                        <v-list-item-subtitle>dennis.bruijn@sytac.io</v-list-item-subtitle>
-                    </v-list-item-content>
-                </v-list-item>
-                <v-list-item @click>
-                    <v-list-item-action>
                         <v-icon>mdi-calendar</v-icon>
                     </v-list-item-action>
                     <v-list-item-content>
