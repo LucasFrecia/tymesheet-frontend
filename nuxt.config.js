@@ -7,6 +7,17 @@ export default {
 
     buildModules: ['@nuxtjs/vuetify'],
 
+    vuetify: {
+        theme: {
+            light: true,
+            themes: {
+                light: {
+                    primary: '#11171E'
+                }
+            }
+        }
+    },
+
     serverMiddleware: ['~/api/auth.js'],
 
     router: {

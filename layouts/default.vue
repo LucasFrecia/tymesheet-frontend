@@ -8,9 +8,7 @@
                     </v-list-item-action>
                     <v-list-item-content>
                         <v-list-item-title>Dennis Bruijn</v-list-item-title>
-                        <v-list-item-subtitle
-                            >dennis.bruijn@sytac.io</v-list-item-subtitle
-                        >
+                        <v-list-item-subtitle>dennis.bruijn@sytac.io</v-list-item-subtitle>
                     </v-list-item-content>
                 </v-list-item>
                 <v-list-item @click>
@@ -40,15 +38,15 @@
             </v-list>
         </v-navigation-drawer>
 
-        <v-app-bar app color="indigo" dark>
-            <v-app-bar-nav-icon
-                @click.stop="drawer = !drawer"
-            ></v-app-bar-nav-icon>
-            <v-toolbar-title>Sytac timesheets</v-toolbar-title>
+        <v-app-bar app color="primary" dark>
+            <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+            <v-toolbar-title>
+                <img src="~/assets/logo.png" style="width: 100px;padding-top:8px;" />
+            </v-toolbar-title>
 
             <v-spacer></v-spacer>
 
-            <TheHeader/>
+            <TheHeader />
         </v-app-bar>
 
         <v-content>
@@ -56,7 +54,7 @@
                 <nuxt />
             </v-container>
         </v-content>
-        <v-footer color="indigo" app>
+        <v-footer color="primary" app>
             <span class="white--text">&copy; Sytac timesheets 2019</span>
         </v-footer>
     </v-app>
