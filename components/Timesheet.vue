@@ -7,7 +7,7 @@
             class="elevation-1"
         >
             <template v-slot:item.date="{ item }">
-                <v-text-field v-model="item.date" />
+                <v-text-field style="width: 100px;" v-model="item.date" />
             </template>
             <template v-slot:item.worked="{ item }">
                 <v-text-field v-model="item.worked" />
@@ -31,8 +31,6 @@
     </div>
 </template>
 
-<!--                    {{ item[headers[index] && headers[index].value] }}-->
-
 <script>
 export default {
     data: () => ({
@@ -40,7 +38,7 @@ export default {
         headers: [
             { text: 'date', value: 'date' },
             { text: 'worked', value: 'worked' },
-            { text: 'internal_hours', value: 'internal' },
+            { text: 'internal hours', value: 'internal' },
             { text: 'courses', value: 'courses' },
             { text: 'leave', value: 'leave' },
             { text: 'sick', value: 'sick' },
