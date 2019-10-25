@@ -8,25 +8,29 @@
             class="elevation-1"
         >
             <template v-slot:item.date="{ item }">
-                <v-text-field style="width: 100px;" v-model="item.date" />
+                <v-text-field
+                    style="width: 100px;"
+                    type="date"
+                    v-model="item.date"
+                />
             </template>
             <template v-slot:item.worked="{ item }">
-                <v-text-field v-model="item.worked" />
+                <v-text-field type="number" v-model="item.worked" />
             </template>
             <template v-slot:item.internal="{ item }">
-                <v-text-field v-model="item.internal" />
+                <v-text-field type="number" v-model="item.internal" />
             </template>
             <template v-slot:item.courses="{ item }">
-                <v-text-field v-model="item.courses" />
+                <v-text-field type="number" v-model="item.courses" />
             </template>
             <template v-slot:item.leave="{ item }">
-                <v-text-field v-model="item.leave" />
+                <v-text-field type="number" v-model="item.leave" />
             </template>
             <template v-slot:item.sick="{ item }">
-                <v-text-field v-model="item.sick" />
+                <v-text-field type="number" v-model="item.sick" />
             </template>
             <template v-slot:item.doctor="{ item }">
-                <v-text-field v-model="item.doctor" />
+                <v-text-field type="number" v-model="item.doctor" />
             </template>
         </v-data-table>
     </div>
@@ -35,7 +39,6 @@
 <script>
 export default {
     data: () => ({
-        // items: [],
         headers: [
             { text: 'date', value: 'date' },
             { text: 'worked', value: 'worked' },
