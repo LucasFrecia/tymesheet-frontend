@@ -3,7 +3,7 @@ export default {
         light: true, //you don't actually need this line as it's for default
         themes: {
             light: {
-                primary: '#f2a516'
+                primary: '#ED9946'
             },
         },
     }
