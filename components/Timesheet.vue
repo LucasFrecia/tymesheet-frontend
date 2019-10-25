@@ -14,22 +14,22 @@
                 />
             </template>
             <template v-slot:item.worked="{ item }">
-                <v-text-field type="number" v-model="item.worked" />
+                <v-text-field type="number" v-model.number="item.worked" />
             </template>
             <template v-slot:item.internal="{ item }">
-                <v-text-field type="number" v-model="item.internal" />
+                <v-text-field type="number" v-model.number="item.internal" />
             </template>
             <template v-slot:item.courses="{ item }">
-                <v-text-field type="number" v-model="item.courses" />
+                <v-text-field type="number" v-model.number="item.courses" />
             </template>
             <template v-slot:item.leave="{ item }">
-                <v-text-field type="number" v-model="item.leave" />
+                <v-text-field type="number" v-model.number="item.leave" />
             </template>
             <template v-slot:item.sick="{ item }">
-                <v-text-field type="number" v-model="item.sick" />
+                <v-text-field type="number" v-model.number="item.sick" />
             </template>
             <template v-slot:item.doctor="{ item }">
-                <v-text-field type="number" v-model="item.doctor" />
+                <v-text-field type="number" v-model.number="item.doctor" />
             </template>
         </v-data-table>
     </div>

@@ -49,13 +49,12 @@ export default {
 
     methods: {
         getTimesheet(date, client) {
-            console.log('>>>', date, client)
             if (!date || !client) return
             this.$store.dispatch('getTimesheet', { date, client })
         },
 
         saveTimesheet() {
-            console.log('save')
+            this.$store.dispatch('saveTimesheet')
         },
 
         submitTimesheet() {
