@@ -1,7 +1,14 @@
-export async function getTimesheet({ state }) {
-    state.timesheet = (await this.$axios.$get(
-        '/api/months?month=201911&client=ING'
-    ))[0]
+export async function getTimesheet({ state }, { date, client }) {
+    state.timesheet = (await this.$axios.$get(`/api/months`, {
+        search: { date, client }
+    }))[0]
 
     return state.timesheet
+}
+
+export async function saveTimesheet({ state }, { date, client } = {}) {
+    return this.$axios.$put(
+        `/api/months/${state.timesheet.id}`,
+        state.timesheet
+    )
 }

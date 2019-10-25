@@ -6,6 +6,10 @@ export default {
     modules: ['@nuxtjs/axios', '@nuxtjs/auth', '@nuxtjs/proxy'],
 
     buildModules: ['@nuxtjs/vuetify'],
+    
+    vuetify: {
+        optionsPath: './vuetify.options.js'
+    },
 
     vuetify: {
         theme: {
