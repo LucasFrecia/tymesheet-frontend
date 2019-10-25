@@ -1,7 +1,7 @@
 <template>
     <div class="d-flex align-center" v-if="$auth.loggedIn">
         <div class="v-toolbar__title">
-            {{ $auth.user.username }}
+            Hi, {{ $auth.user.username }}!
         </div>
         <v-menu left bottom>
             <template v-slot:activator="{ on }">
