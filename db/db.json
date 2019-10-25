@@ -10,7 +10,7 @@
         {
             "client": "ING",
             "status": "draft",
-            "month": "201911",
+            "month": "2019-11",
             "timesheet": [
                 {
                     "date": "2019-11-01",

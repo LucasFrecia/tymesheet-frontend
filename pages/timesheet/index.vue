@@ -2,14 +2,19 @@
     <div>
         <v-container class="grey lighten-5">
             <h1>{{ title }}</h1>
-            <hr />
             <v-row>
                 <v-col>
                     <div class="pickers">
-                        <DatePicker v-model="date" />
+                        <DatePicker
+                            v-model="date"
+                            @input="getTimesheet(date, client)"
+                        />
                         <!-- Fix this using CSS -->
                         <div style="flex: 1;" />
-                        <ClientPicker v-model="client" />
+                        <ClientPicker
+                            v-model="client"
+                            @input="getTimesheet(date, client)"
+                        />
                     </div>
                 </v-col>
             </v-row>
@@ -44,6 +49,8 @@ export default {
 
     methods: {
         getTimesheet(date, client) {
+            console.log('>>>', date, client)
+            if (!date || !client) return
             this.$store.dispatch('getTimesheet', { date, client })
         },
 
@@ -56,7 +63,7 @@ export default {
         }
     },
 
-    mounted: function mounted() {
+    mounted() {
         this.getTimesheet()
     }
 }

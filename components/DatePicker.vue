@@ -33,17 +33,25 @@
 <script>
 export default {
     props: ['value'],
-    
-    data: () => ({
-        date: new Date().toISOString().substr(0, 7),
-        menu: false,
-        modal: false
-    }),
+
+    data() {
+        return {
+            date: this.value || new Date().toISOString().substr(0, 7),
+            menu: false,
+            modal: false
+        }
+    },
+
+    watch: {
+        value(nv) {
+            this.date = nv
+        }
+    },
 
     methods: {
         onDateSelected(date) {
-            this.$refs.menu.save(date);
-            this.$emit('input', date);
+            this.$refs.menu.save(date)
+            this.$emit('input', date)
         }
     }
 }

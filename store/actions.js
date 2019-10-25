@@ -1,7 +1,8 @@
-export async function getTimesheet({ state }) {
-    state.timesheet = (await this.$axios.$get(
-        '/api/months?month=201911&client=ING'
-    ))[0]
+export async function getTimesheet({ state }, { date, client }) {
+    state.timesheet = (await this.$axios.$get(`/api/months`, {
+        search: { date, client }
+    }))[0]
+    // `/api/months?month=${date}&client=${client}`,
 
     return state.timesheet
 }
