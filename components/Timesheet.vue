@@ -55,7 +55,7 @@ export default {
     }),
 
     created() {
-        this.$store.dispatch('getTimesheet')
+        // this.$store.dispatch('getTimesheet')
     },
 
     computed: {

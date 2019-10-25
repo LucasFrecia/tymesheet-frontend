@@ -43,10 +43,8 @@ export default {
     }),
 
     methods: {
-        async getTimesheet() {
-            this.todos = await this.$axios
-                .$get('https://jsonplaceholder.typicode.com/todos/1')
-                .then(resp => console.log(resp))
+        getTimesheet(date, client) {
+            this.$store.dispatch('getTimesheet', { date, client })
         },
 
         saveTimesheet() {
