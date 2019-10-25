@@ -12,8 +12,8 @@
         <template v-slot:activator="{ on }">
             <v-text-field
                 v-model="date"
-                label="Picker in menu"
-                prepend-icon="calendar"
+                label="Select a month"
+                prepend-icon="mdi-calendar"
                 readonly
                 v-on="on"
             />
