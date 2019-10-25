@@ -1,14 +1,14 @@
 <template>
-    <div>
+    <div b1 style="text-align: center;">
         <h1>Login</h1>
 
         <hr />
 
         <form @submit.prevent="login">
-            <label>username <input v-model="username"/></label><br />
-            <label>password <input v-model="password"/></label><br />
+            <v-text-field v-model="username" label="username" /><br />
+            <v-text-field v-model="password" label="password" /><br />
             <pre v-if="login_error" style="color: red;">{{ login_error }}</pre>
-            <button>login</button>
+            <v-btn>login</v-btn>
         </form>
     </div>
 </template>
