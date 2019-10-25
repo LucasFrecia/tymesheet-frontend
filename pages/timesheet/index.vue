@@ -1,15 +1,82 @@
 <template>
     <div>
-        <Timesheet />
+        <v-container class="grey lighten-5">
+            <h1>{{ title }}</h1>
+            <hr />
+            <v-row>
+                <v-col>
+                    <div class="pickers">
+                        <DatePicker v-model="date" />
+                        <!-- Fix this using CSS -->
+                        <div style="flex: 1;" />
+                        <ClientPicker v-model="client" />
+                    </div>
+                </v-col>
+            </v-row>
+            <v-row>
+                <div style="flex: 1;">
+                    <Timesheet />
+                </div>
+            </v-row>
+            <v-row>
+                <div class="buttons">
+                    <v-btn @click="saveTimesheet">Save</v-btn>
+                    <v-btn @click="submitTimesheet">Submit</v-btn>
+                </div>
+            </v-row>
+        </v-container>
     </div>
 </template>
 
 <script>
+import DatePicker from '~/components/DatePicker'
+import ClientPicker from '~/components/ClientPicker'
 import Timesheet from '~/components/Timesheet'
 
 export default {
-    components: {
-        Timesheet
+    components: { DatePicker, ClientPicker, Timesheet },
+
+    data: () => ({
+        title: 'My Timesheets',
+        date: null,
+        client: null
+    }),
+
+    methods: {
+        async getTimesheet() {
+            this.todos = await this.$axios
+                .$get('https://jsonplaceholder.typicode.com/todos/1')
+                .then(resp => console.log(resp))
+        },
+
+        saveTimesheet() {
+            console.log('save')
+        },
+
+        submitTimesheet() {
+            console.log('submit')
+        }
+    },
+
+    mounted: function mounted() {
+        this.getTimesheet()
     }
 }
 </script>
+
+<style lang="scss" scoped>
+.pickers {
+    display: flex;
+}
+
+.buttons {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    margin-top: 16px;
+
+    button + button {
+        margin-left: 16px;
+    }
+}
+</style>
