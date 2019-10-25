@@ -1,8 +1,9 @@
 <template>
     <div>
         <h1>Secret page</h1>
-        <nuxt-link to="/">home</nuxt-link>
+
         <button @click="getTodos">Get Todos</button>
+        
         <div v-if="todos">
             <hr />
             <input v-model="title" @keyup.enter="addTodo(title)" />

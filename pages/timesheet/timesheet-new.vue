@@ -11,7 +11,7 @@ export default {
     data: () => ({
         title: 'My Timesheets'
     }),
-    methods: {
+    methods: { 
         async getTimesheet() {
             this.todos = await this.$axios
                 .$get('https://jsonplaceholder.typicode.com/todos/1')

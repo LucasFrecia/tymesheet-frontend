@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>Login</h1>
-        <nuxt-link to="/">home</nuxt-link>
+
         <hr />
 
         <form @submit.prevent="login">
