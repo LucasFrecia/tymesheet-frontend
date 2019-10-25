@@ -1,9 +1,8 @@
 <template>
     <v-app>
-
         <SideNav/>
 
-        <v-app-bar app color="indigo" dark>
+        <v-app-bar app color="primary" dark>
             <v-app-bar-nav-icon
                 @click.stop="$store.state.sidenav.open = !$store.state.sidenav.open"
             ></v-app-bar-nav-icon>
@@ -11,7 +10,7 @@
 
             <v-spacer></v-spacer>
 
-            <TheHeader/>
+            <TheHeader />
         </v-app-bar>
 
         <v-content>
@@ -19,7 +18,7 @@
                 <nuxt />
             </v-container>
         </v-content>
-        <v-footer color="indigo" app>
+        <v-footer color="primary" app>
             <span class="white--text">&copy; Sytac timesheets 2019</span>
         </v-footer>
     </v-app>
