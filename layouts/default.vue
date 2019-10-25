@@ -45,6 +45,10 @@
                 @click.stop="drawer = !drawer"
             ></v-app-bar-nav-icon>
             <v-toolbar-title>Sytac timesheets</v-toolbar-title>
+
+            <v-spacer></v-spacer>
+
+            <TheHeader/>
         </v-app-bar>
 
         <v-content>
