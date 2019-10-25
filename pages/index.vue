@@ -1,15 +1,9 @@
 <template>
-    <div>
-        <Timesheet />
-    </div>
+    <div></div>
 </template>
 
 <script>
-import Timesheet from '~/components/Timesheet'
-
 export default {
-    components: {
-        Timesheet
-    }
+    components: {}
 }
 </script>

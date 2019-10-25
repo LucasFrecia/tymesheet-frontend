@@ -9,7 +9,7 @@
             </template>
             <v-list>
                 <v-list-item>
-                    <v-list-item-title @click="() => {}">
+                    <v-list-item-title @click>
                         <nuxt-link class="no-link-style" to="/">Home</nuxt-link>
                     </v-list-item-title>
                 </v-list-item>
@@ -21,24 +21,22 @@
                     </v-list-item-title>
                 </v-list-item>
                 <v-list-item>
-                    <v-list-item-title @click="() => {}">
+                    <v-list-item-title @click>
                         <nuxt-link class="no-link-style" to="/secret"
                             >Secret</nuxt-link
                         >
                     </v-list-item-title>
                 </v-list-item>
                 <v-list-item>
-                    <v-list-item-title @click="() => {}">
+                    <v-list-item-title @click>
                         <nuxt-link class="no-link-style" to="/profile"
                             >Profile</nuxt-link
                         >
                     </v-list-item-title>
                 </v-list-item>
                 <v-list-item>
-                    <v-list-item-title @click="() => {}">
-                        <nuxt-link
-                            class="no-link-style"
-                            to="timesheet/timesheet-new"
+                    <v-list-item-title @click>
+                        <nuxt-link class="no-link-style" to="/timesheet"
                             >New Timesheet</nuxt-link
                         >
                     </v-list-item-title>
