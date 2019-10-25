@@ -64,6 +64,3 @@ export default {}
         cursor: auto;
     }
 </style>
-
-<style>
-</style>
