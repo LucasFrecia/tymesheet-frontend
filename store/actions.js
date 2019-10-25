@@ -7,7 +7,7 @@ export async function getTimesheet({ state }, { date, client }) {
 }
 
 export async function saveTimesheet({ state }, { date, client } = {}) {
-    return this.$axios.$post(
+    return this.$axios.$put(
         `/api/months/${state.timesheet.id}`,
         state.timesheet
     )
