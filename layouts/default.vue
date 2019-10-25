@@ -1,48 +1,12 @@
 <template>
     <v-app>
-        <v-navigation-drawer v-model="drawer" app>
-            <v-list dense>
-                <v-list-item @click>
-                    <v-list-item-action>
-                        <v-icon>mdi-account</v-icon>
-                    </v-list-item-action>
-                    <v-list-item-content>
-                        <v-list-item-title>Dennis Bruijn</v-list-item-title>
-                        <v-list-item-subtitle>dennis.bruijn@sytac.io</v-list-item-subtitle>
-                    </v-list-item-content>
-                </v-list-item>
-                <v-list-item @click>
-                    <v-list-item-action>
-                        <v-icon>mdi-calendar</v-icon>
-                    </v-list-item-action>
-                    <v-list-item-content>
-                        <v-list-item-title>Timesheets</v-list-item-title>
-                    </v-list-item-content>
-                </v-list-item>
-                <v-list-item @click>
-                    <v-list-item-action>
-                        <v-icon>mdi-history</v-icon>
-                    </v-list-item-action>
-                    <v-list-item-content>
-                        <v-list-item-title>History</v-list-item-title>
-                    </v-list-item-content>
-                </v-list-item>
-                <v-list-item @click>
-                    <v-list-item-action>
-                        <v-icon>mdi-lifebuoy</v-icon>
-                    </v-list-item-action>
-                    <v-list-item-content>
-                        <v-list-item-title>Help</v-list-item-title>
-                    </v-list-item-content>
-                </v-list-item>
-            </v-list>
-        </v-navigation-drawer>
+        <SideNav/>
 
         <v-app-bar app color="primary" dark>
-            <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-            <v-toolbar-title>
-                <img src="~/assets/logo.png" style="width: 100px;padding-top:8px;" />
-            </v-toolbar-title>
+            <v-app-bar-nav-icon
+                @click.stop="$store.state.sidenav.open = !$store.state.sidenav.open"
+            ></v-app-bar-nav-icon>
+            <v-toolbar-title>Sytac timesheets</v-toolbar-title>
 
             <v-spacer></v-spacer>
 
@@ -62,6 +26,7 @@
 
 <script>
 import TheHeader from '~/components/Header'
+import SideNav from '~/components/SideNav'
 
 export default {
     props: {
@@ -69,12 +34,9 @@ export default {
     },
 
     components: {
-        TheHeader
-    },
-
-    data: () => ({
-        drawer: null
-    })
+        TheHeader,
+        SideNav
+    }
 }
 </script>
 

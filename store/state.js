@@ -1,3 +1,4 @@
 export default () => ({
-    timesheet: []
+    timesheet: [],
+    sidenav: { open: false }
 })
