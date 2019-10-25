@@ -48,7 +48,7 @@
         </v-app-bar>
 
         <v-content>
-            <v-container class="fill-height" fluid>
+            <v-container align="start" fluid>
                 <nuxt />
             </v-container>
         </v-content>

@@ -1,5 +1,5 @@
 <template>
-    <div b1 style="text-align: center;">
+    <div style="">
         <h1>Login</h1>
 
         <hr />
