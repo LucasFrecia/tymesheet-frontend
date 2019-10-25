@@ -1,76 +1,132 @@
 {
-  "users": [
-    {
-      "id": 1,
-      "username": "pbastowski@gmail.com",
-      "password": "test123"
-    }
-  ],
-  "todos": [
-    {
-      "title": "new task this new stuff here",
-      "done": true,
-      "id": 56
-    },
-    {
-      "title": "1 time",
-      "done": false,
-      "id": 57
-    },
-    {
-      "title": "sdfa",
-      "done": false,
-      "id": 58
-    },
-    {
-      "title": "dfg",
-      "done": false,
-      "id": 59
-    },
-    {
-      "title": "sd",
-      "done": true,
-      "id": 60
-    },
-    {
-      "title": "sdg",
-      "done": true,
-      "id": 61
-    },
-    {
-      "title": "df",
-      "done": true,
-      "id": 62
-    },
-    {
-      "title": "new stuff",
-      "done": false,
-      "id": 63
-    },
-    {
-      "title": "test",
-      "done": false,
-      "id": 64
-    },
-    {
-      "title": "test",
-      "done": false,
-      "id": 65
-    },
-    {
-      "title": "gjgh",
-      "done": false,
-      "id": 66
-    },
-    {
-      "title": "jutyk",
-      "done": false,
-      "id": 67
-    },
-    {
-      "title": "fdafd",
-      "done": false,
-      "id": 68
-    }
-  ]
+    "users": [
+        {
+            "id": 1,
+            "username": "pbastowski@gmail.com",
+            "password": "test123"
+        }
+    ],
+    "months": [
+        {
+            "client": "ING",
+            "status": "draft",
+            "month": "201911",
+            "timesheet": [
+                {
+                    "date": "2019-11-01",
+                    "worked": 8
+                },
+                {
+                    "date": "2019-11-04",
+                    "sick": 8
+                },
+                {
+                    "date": "2019-11-05",
+                    "leave": 8
+                },
+                {
+                    "date": "2019-11-06",
+                    "worked": 8
+                },
+                {
+                    "date": "2019-11-07",
+                    "doctor": 8
+                },
+                {
+                    "date": "2019-11-08",
+                    "worked": 8,
+                    "ot_from": "19:30",
+                    "ot_to": "03:30"
+                },
+                {
+                    "date": "2019-11-11",
+                    "internal": 8,
+                    "standby": 3
+                },
+                {
+                    "date": "2019-11-12",
+                    "worked": 8
+                },
+                {
+                    "date": "2019-11-13",
+                    "worked": 8
+                },
+                {
+                    "date": "2019-11-14",
+                    "worked": 8
+                },
+                {
+                    "date": "2019-11-15",
+                    "worked": 8
+                }
+            ]
+        }
+    ],
+    "todos": [
+        {
+            "title": "new task this new stuff here",
+            "done": true,
+            "id": 56
+        },
+        {
+            "title": "1 time",
+            "done": false,
+            "id": 57
+        },
+        {
+            "title": "sdfa",
+            "done": false,
+            "id": 58
+        },
+        {
+            "title": "dfg",
+            "done": false,
+            "id": 59
+        },
+        {
+            "title": "sd",
+            "done": true,
+            "id": 60
+        },
+        {
+            "title": "sdg",
+            "done": true,
+            "id": 61
+        },
+        {
+            "title": "df",
+            "done": true,
+            "id": 62
+        },
+        {
+            "title": "new stuff",
+            "done": false,
+            "id": 63
+        },
+        {
+            "title": "test",
+            "done": false,
+            "id": 64
+        },
+        {
+            "title": "test",
+            "done": false,
+            "id": 65
+        },
+        {
+            "title": "gjgh",
+            "done": false,
+            "id": 66
+        },
+        {
+            "title": "jutyk",
+            "done": false,
+            "id": 67
+        },
+        {
+            "title": "fdafd",
+            "done": false,
+            "id": 68
+        }
+    ]
 }
