@@ -7,11 +7,11 @@
                         <v-icon>mdi-calendar</v-icon>
                     </v-list-item-action>
                     <v-list-item-content>
-                        <v-list-item-title
-                            ><nuxt-link to="/timesheet"
-                                >Timesheets</nuxt-link
-                            ></v-list-item-title
-                        >
+                        <v-list-item-title>
+                            <nuxt-link to="/timesheet">
+                                Timesheets
+                            </nuxt-link>
+                        </v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
                 <v-list-item @click>
@@ -19,7 +19,11 @@
                         <v-icon>mdi-history</v-icon>
                     </v-list-item-action>
                     <v-list-item-content>
-                        <v-list-item-title>History</v-list-item-title>
+                        <v-list-item-title>
+                            <nuxt-link to="/historicalTimesheets">
+                                History
+                            </nuxt-link>
+                        </v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
                 <v-list-item @click>

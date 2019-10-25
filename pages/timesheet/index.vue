@@ -42,7 +42,7 @@ export default {
     components: { DatePicker, ClientPicker, Timesheet },
 
     data: () => ({
-        title: 'My Timesheets',
+        title: 'New Timesheet',
         date: null,
         client: null
     }),

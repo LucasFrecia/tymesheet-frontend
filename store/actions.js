@@ -12,3 +12,9 @@ export async function saveTimesheet({ state }, { date, client } = {}) {
         state.timesheet
     )
 }
+
+export async function getHistoricalTimesheets({ state }) {
+    state.history = (await this.$axios.$get(`/api/months`))
+
+    return state.history
+}
