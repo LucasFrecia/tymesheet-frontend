@@ -8,10 +8,10 @@ export default {
     buildModules: ['@nuxtjs/vuetify'],
     vuetify: {
         theme: {
-            light: true, //you don't actually need this line as it's for default
+            light: true,
             themes: {
                 light: {
-                    primary: '#b71c1c'
+                    primary: '#11171E'
                 }
             }
         }
