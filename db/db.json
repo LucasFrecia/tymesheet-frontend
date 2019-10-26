@@ -8,9 +8,9 @@
       "timesheet": [
         {
           "date": "2019-11-01",
-          "worked": 6,
-          "internal": 2,
-          "courses": 1
+          "worked": 8,
+          "internal": "",
+          "courses": ""
         },
         {
           "date": "2019-11-04",

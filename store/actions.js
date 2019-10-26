@@ -1,6 +1,6 @@
 export async function getTimesheet({ state }, { date, client }) {
     state.timesheet = (await this.$axios.$get(`/api/months`, {
-        search: { date, client }
+        params: { date, client }
     }))[0]
 
     return state.timesheet
@@ -14,7 +14,7 @@ export async function saveTimesheet({ state }, { date, client } = {}) {
 }
 
 export async function getHistoricalTimesheets({ state }) {
-    state.history = (await this.$axios.$get(`/api/months`))
+    state.history = await this.$axios.$get(`/api/months`)
 
     return state.history
 }
