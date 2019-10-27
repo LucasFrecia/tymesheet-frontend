@@ -8,9 +8,17 @@ export default {
 
     buildModules: ['@nuxtjs/vuetify'],
 
-    // vuetify: {
-    //     optionsPath: './vuetify.options.js'
-    // },
+    vuetify: {
+        // optionsPath: '~/vuetify.options.js'
+        theme: {
+            light: true,
+            themes: {
+                light: {
+                    primary: '#11171E'
+                }
+            }
+        }
+    },
 
     serverMiddleware: ['~/api/auth.js'],
 
