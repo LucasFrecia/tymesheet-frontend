@@ -1,26 +1,16 @@
 export default {
     mode: 'spa',
+    srcDir: 'src/',
 
     plugins: ['plugins/main.js', './plugins/mini-toastr.js'],
 
     modules: ['@nuxtjs/axios', '@nuxtjs/auth', '@nuxtjs/proxy'],
 
     buildModules: ['@nuxtjs/vuetify'],
-    
-    vuetify: {
-        optionsPath: './vuetify.options.js'
-    },
 
-    vuetify: {
-        theme: {
-            light: true,
-            themes: {
-                light: {
-                    primary: '#11171E'
-                }
-            }
-        }
-    },
+    // vuetify: {
+    //     optionsPath: './vuetify.options.js'
+    // },
 
     serverMiddleware: ['~/api/auth.js'],
 
